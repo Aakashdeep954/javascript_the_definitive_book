@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h3>CHAPTER 6</h3>
+                    <hr />
+                    <h2>Objects</h2>
+                    <br /><br />
+                    <h4>6.1 Introduction to objects</h4>
+                    <p>
+                        An object is a composite value.It contains multiple
+                        values and allows you to store and retrieve thoes values
+                        by name.An object is undorderd collection of properties
+                        each of which has a name and value.Property names are
+                        usually strings,so we can say that objects maps strings
+                        to values.javascripts also inherits properties from
+                        another object known as prototype.Each property has
+                        three property attributes.
+                    </p>
+                    <ul>
+                        <li>
+                            The writable attribute specifies whether the value
+                            of the property can be set.
+                        </li>
+                        <li>
+                            The enumerable attribute specifies whether the
+                            property name is returned by a for/in loop.
+                        </li>
+                        <li>
+                            The cofigurable attribute specifies whether the
+                            property can be deleted and altered.
+                        </li>
+                    </ul>
+                    <p>
+                        Many built in javascript objects are read only , non
+                        enumerable, non configurable. However by default user
+                        defined objects are writable, enumerable, configurable.
+                    </p>
+                    <h4>6.2 creating objects</h4>
+                    <p>
+                        objects can be created using object literal, the new
+                        keyword, and using object.create() fuction.
+                    </p>
+                    <h5>6.2.2 Creating objects with new</h5>
+                    <p>
+                        The new operator creates and initializes a new
+                        object.The new keyword must be followed by a function
+                        invocation. A fuction used in this way is called
+                        constructor and serves to initialze newly created
+                        object.
+                    </p>
+                    <h5>6.2.3 Prototypes</h5>
+                    <p>
+                        Almost every object has a second object associated with
+                        it.This second object is known as prototype and the
+                        first object inherits properties from the prototype.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

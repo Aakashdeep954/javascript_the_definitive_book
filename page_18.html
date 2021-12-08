@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h4>7.8.6 Array searching and sorting methods</h4>
+                    <h5>indexOf() and lastIndexOf()</h5>
+                    <p>
+                        They both search an array for an element with a
+                        specified value and return the index of first such
+                        element found or -1 if not found.IndexOf() searches from
+                        the begining of the array whereas lastIndexOf() searches
+                        from the end.
+                    </p>
+                    <h5>includes()</h5>
+                    <p>
+                        The ES2016 includes() method takes a single argument and
+                        returns true if the array contains that value or false
+                        otherwise.
+                    </p>
+                    <h5>sort()</h5>
+                    <p>
+                        sort() sorts the elements of array in place and returns
+                        the sorted array.If sort is called without arguments it
+                        sorts the array in alphabetical order.To sort an array
+                        into some order other than alphabetical you must pass
+                        comparator function as an argument.
+                    </p>
+                    <h5>reverse()</h5>
+                    <p>
+                        The reverse() method reverses the order of the elements
+                        of an array and returns the reversed array.
+                    </p>
+                    <h4>Summary</h4>
+                    <p>The main points to take away from this chapter are</p>
+                    <ul>
+                        <li>
+                            array literals are written as comma seperated lists
+                            of values within square brackets.
+                        </li>
+                        <li>
+                            The for/of and ...spread operator introduced in ES6
+                            are particularly useful ways to iterate arrays.
+                        </li>
+                        <li>
+                            The array class defines a rich set of methods for
+                            maipulating arrays.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

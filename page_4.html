@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h5>3.3.2 Sting literals</h5>
+                    <p>
+                        The backslash has a special purpose in javascript.It
+                        represents a character that is otherwise not
+                        representable.
+                    </p>
+                    <h5>3.3.2 working with strings</h5>
+                    <p>
+                        one of the built in features of javascript is the
+                        ability to concatenate strings.The + operator adds if
+                        used with numbers but concatenates if used with
+                        strings.Strings can be compared with standard === and
+                        !== operators. Two strings are equal if and only if both
+                        have same sequence of 16 bit values.Strings are
+                        immutable in javascript, so the methods like replace()
+                        and toUpperCase return new string.They do not modify the
+                        string on which they are invoked.
+                    </p>
+                    <h5>3.3.4 Template literals</h5>
+                    <p>
+                        In ES6 onwards stirngs can be delimmited by using back
+                        ticks. This is more than just another string literal,
+                        because it can also include arbitary javascript
+                        expressions which are computed and then converted into
+                        stirngs.
+                    </p>
+                    <h5>3.3.5 pattern matching</h5>
+                    <p>
+                        javascript defines a data type known as regular
+                        expressions for describing and matching strings of text.
+                        Regular expressions are not fundamental datatypes but
+                        they do have literal syntax and seem like a fundamental
+                        data type.The grammar of regular expression is quiet
+                        complex and the api they provide is non trivial.Text
+                        between two slashes is regular expression literal
+                        syntax.The second slash can be followed by a letter
+                        which modifies the meaning of the pattern.
+                    </p>
+                    <h4>3.4 Boolean values</h4>
+                    <p>
+                        a boolean value represents truth or false,on or off,yes
+                        or no.Javascript values can be converted into boolean
+                        values. The values that work as false area
+                        null,undefined,0,-0,NaN,"". All other values including
+                        objects and arrays convert to and work like truth.
+                    </p>
+                    <h4>3.5 null and undefined</h4>
+                    <p>
+                        null is a key word that evaluates to a special value
+                        which indicates absence of value,using typeOf operator
+                        on null returns string object indicating null can be
+                        thought of a special object.javascript has a second
+                        value which indicates absence of value that is the
+                        undedined. It is a value when variables are not
+                        initialised or the vaue you get when you query value of
+                        an object or an array element which does not exist.The undifined value is also the return value of 
+                        a function which do not explicitly return a value.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

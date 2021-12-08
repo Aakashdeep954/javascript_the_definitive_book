@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h5>4.9.3 The in operator</h5>
+                    <p>
+                        The in operator expects left operand to be a
+                        string,symbol,or any value that can be converted to a
+                        strings.It expects right operand to be an object.It
+                        evaluates to true if left hand side value is the
+                        property name in the object.
+                    </p>
+                    <h5>4.9.4 The instanceOf operator</h5>
+                    <p>
+                        The instance of operator expects left hand side operand
+                        to be an object and right hand side operand to be class
+                        of objects.The operator evaluates to true if the left
+                        side object is the instance of the right side class
+                        false otherwise.In javascript classes of objects are
+                        defined by the constructor function that
+                        initializes.Thus the right hand side operand of the
+                        instanceOf operator should be a function.
+                    </p>
+                    <h5>4.10.1 The logical and</h5>
+                    <p>
+                        The logical and evaluates to true if the both operands
+                        are true.It starts by evaluating the left operand, if it
+                        is false it returns the first operand otherwise returns
+                        the second operand.
+                    </p>
+                    <h5>4.13.1 The conditional operator</h5>
+                    <p>
+                        The conditional operator is the only ternary operator in
+                        javascript. The operands of the conditional operator can
+                        be of any type.The first operand is evaluated and
+                        interpreted as boolean.If the value of the first operand
+                        is truthy then the second operand is evaluated and
+                        returned othewise third operand is evaluated and
+                        returned.
+                    </p>
+                    <h5>4.13.2 The first defined operator(??)</h5>
+                    <p>
+                        The first defined operator evaluates to its first
+                        defined operand if its left operand is not null and
+                        udefined,othewise it evaluates to second operand.?? is
+                        an alternative to || when you want to select the first
+                        defined opernad rather than first truthy value.This
+                        operator is formally called the nullish coalescing.
+                    </p>
+                    <h5>4.13.3 The typeOf operator</h5>
+                    <p>
+                        typeOf operator is a unary operator which is paced
+                        before the operand,which can be of any type.Its value is a string that specifies the 
+                        type of operand.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h4>4.4 Property access expressions</h4>
+                    <p>
+                        a property access expression evaluates to the value of
+                        an object property or an array element.javascript
+                        defines two syntaxes for property access.
+                        <br />
+                        expression . identifier
+                        <br />
+                        expession [expession]
+                    </p>
+                    <h5>4.4.1 Conditional property access</h5>
+                    <p>
+                        ES2020 adds two new kinds of property access expressions
+                        <br />
+                        expression ?. identifier
+                        <br />
+                        expession ?. [expession]
+                        <br />
+                        In javascript null and undefined are the only two values
+                        which do not have properties.In a regular property
+                        access expression using . or [] will throw typeError so
+                        use can use ?. syntax to guard agaist these errors.
+                    </p>
+                    <h5>4.5.1 Conditional invocation</h5>
+                    <p>
+                        In ES2020, you can also invoke a function using ?.()
+                        instead of ().with the new ?.() invocation syntax if the
+                        expression to the left of the ?. evaluates to null or
+                        undefined then the entire invocation expression
+                        evaluates to undefined and no exception is thrown.
+                    </p>
+                    <h4>4.8.1 The + Operator</h4>
+                    <p>
+                        The binary + operator adds numeric operands and
+                        concatenates string operands. If either of the operand
+                        is string or object that converts to a string, the
+                        operand is converted to string and concatenation is
+                        performed.
+                    </p>
+                    <h4>4.8.3 Bitwise operators</h4>
+                    <p>
+                        The bitwise operators perform low level manipulation of
+                        the bits in the binary representation of the numbers.The
+                        bitwise operators expexct integer operands and behave as
+                        if those values are represented in 32 bit integers
+                        rather than 64 bit floating point values.These operators
+                        convert the operands to numbers if neccessary and coerce
+                        the numeric values to 32 bit integers dropping any
+                        fractional part.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

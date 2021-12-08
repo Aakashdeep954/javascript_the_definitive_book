@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h5>6.2.4 Object.create()</h5>
+                    <p>
+                        object.create() creates a new object using its first
+                        argument as the prototype of that object.you can pass
+                        null to create a new object that does not have a
+                        prototype,but if you do this the newly created object
+                        will not inherit anything
+                    </p>
+                    <h4>6.3 Querying and setting properties</h4>
+                    <p>
+                        To obtain the value of a property ue the dot or square
+                        bracket operations.The left hand side must be an
+                        expression whose value is an object.If using the dot
+                        operator the right hand side must be a simpler
+                        identifier that names the property.If using square
+                        brackets the value within the brackets must be an
+                        expression that evaluates to a string.
+                    </p>
+                    <h4>6.4 Deleting properites</h4>
+                    <p>
+                        the delete operator removes a property form an
+                        object.Its single operand should be a property access
+                        expression.The delete operator only deletes own
+                        properties,not inherited ones.
+                    </p>
+                    <h4>6.5 Testing properites</h4>
+                    <p>
+                        Javascript objects can be thought of as sets as
+                        properites and it is often useful to be able to test for
+                        membership in the set to check whether an objct ahs a
+                        property with a given name.you can do this with the in
+                        operator with the hasOwnProperty() and
+                        propertyIsEnumerable() methods.
+                    </p>
+                    <h5>6.6.1 property Enumeration order</h5>
+                    <p>
+                        String properties whose names are non-negative integers
+                        are listed first,in numeric order smallest to
+                        largest.Then string names are listed in the order they
+                        were added.Finally symbols are listed in the order they
+                        were added.
+                    </p>
+                    <h4>6.8 serializing objects</h4>
+                    <p>
+                        object serializing is the process of converting an
+                        object states to a string from which it can be restored
+                        later. The funcitions json.stringify() and json.parse()
+                        serialize and restore javascript objects.Json is a
+                        subset of javascript syntax and it cannot represent all
+                        javascript values.Objects,strings,finite
+                        numbers,false,true,and null are supported.NaN,Infinity
+                        and -Infinity are serialized to null.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

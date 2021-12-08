@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h5>7.1.5 Array.of()</h5>
+                    <p>
+                        Array constructor cannot be used to create with single
+                        argument.In ES6, the Array.of() function addresses this
+                        problem. It is a factory method that creates and returns
+                        a new array irrespective of number of arguments.
+                    </p>
+                    <h5>7.1.6 Array.from()</h5>
+                    <p>
+                        Array.from() is another factory method that was
+                        introduced in ES6.It expects an iterable or array like
+                        object as its first argument and returns a new array
+                        that contains the elements of that object.
+                    </p>
+                    <h4>7.3 sparse arrays</h4>
+                    <p>
+                        A sparse array is one in which the elements do not have
+                        continous indexes.If the array is sparse the value of
+                        the lenght property is more than the number or elements.
+                    </p>
+                    <h4>7.8.1 Array iterator methods</h4>
+                    <h5>forEach</h5>
+                    <p>
+                        The forEach method ieterates through an array invoking
+                        the function you specified for each element.forEach
+                        invokes the funcition with three arguments array
+                        value,index,array itself.If you only care about the
+                        array value just pass argument.
+                    </p>
+                    <h5>map()</h5>
+                    <p>
+                        The map function passes each element of the array it was
+                        invoked on to the function you specify and returns an
+                        array containing values returned by your function.
+                    </p>
+                    <h5>filter()</h5>
+                    <p>
+                        The filter method returns an array containing a subset
+                        of elements of the array on which it is invoked. The
+                        function you pass should be a predicate: a function that
+                        returns true or false. If the return value is true or a
+                        value that converts to true,then the element passed to
+                        the predicate is member of the subset and is added to
+                        the array that will become the return value.
+                    </p>
+                  
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

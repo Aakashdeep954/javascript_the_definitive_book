@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h5>find() and findIndex()</h5>
+                    <p>
+                        The find() and findIndex() are similar to filter in that
+                        they iterate through the array looking for the element
+                        for which your predicate function returns a truthy
+                        value.Unlike filter() these two methods stop iterating
+                        the first time the predicate finds the an element.If no
+                        matching element is found find() returns undefined and
+                        findIndex() returns -1.
+                    </p>
+                    <h5>every() and some()</h5>
+                    <p>
+                        The every() method is like the mathematical for all
+                        quantifier:it returns true if and only if your predicate
+                        function returns true for all elements in the array. The
+                        some() method is like the mathematical there exists
+                        quatifier:it returns true if there exists atleast one
+                        element in the array for which your predicate function
+                        return true and returns true if predicate function
+                        returns false for all the elments in of array.
+                    </p>
+                    <h5>reduce() and reduceRight()</h5>
+                    <p>
+                        The reduce() and reduceRight() combine the elements of
+                        an array using the function you specify to produce a
+                        single value. reduce() takes two arguments.First is the
+                        function that performs the reduction.The second argument
+                        is an initial value to pass to the
+                        function.ReduceRight() works just like the reduce()
+                        except it processes the array from highest index to
+                        lowest index.
+                    </p>
+                    <h5>7.8.2 Flattening arrays with flat() and flatMap()</h5>
+                    <p>
+                        In ES2019 the flat() flat method creates and returns a
+                        new array that contains the same elements as the array
+                        it is called on, except that any elements that are
+                        themeselves arrays are flattened into a returned array.
+                    </p>
+                    <h5>7.8.3 Adding arrays with concat()</h5>
+                    <p>
+                        The concat() method creates and returns a new array that
+                        contains the elements of original array on which the
+                        concat() was invoked,follwed by each of arguments to
+                        concat().
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

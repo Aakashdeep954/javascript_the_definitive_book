@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h5>
+                        7.8.4 Stack and queues with pop(),push(),shift() and
+                        unshift()
+                    </h5>
+                    <p>
+                        The push() and pop() allow you to work with arrays as if
+                        the were stacks. The push() method appends one or more
+                        new elements at the end of the array and returns the new
+                        length of the array.The pop() method does it reverse: it
+                        deletes the last element of an array,decrements the
+                        length and returns the value it removed.The unshift()
+                        adds elements to the begining of the array and shifts
+                        the existing array elements to higher indexes to make
+                        room.Shift() removes and returns the first element of
+                        the array,shifting all subsequent elements down one
+                        place.
+                    </p>
+                    <h4>
+                        7.8.5 Subarrays with slice(),splice(),fill(),and
+                        copyWithin()
+                    </h4>
+                    <h5>slice()</h5>
+                    <p>
+                        The slice() method returns a slice or a subarray of the
+                        specified array.Its two argumenrs specify the start and
+                        end of the slice to be returned.It doesn't include end
+                        argument element.If only one argument is specified the
+                        returned array contains all them elements.
+                    </p>
+                    <h5>splice()</h5>
+                    <p>
+                        splice() is an generla purpose method for inserting or
+                        removing elements from an array.Elements that come after
+                        the insertion and deletion have their indexes increased
+                        or decreased.The first argument specifies the startingn
+                        position to insert or delete and the second argument
+                        specifies the no of elements to be deleted.
+                    </p>
+                    <h5>fill()</h5>
+                    <p>
+                        The fill() method sets the elments of an array, to a
+                        specified value.It mutates the array it is called on and
+                        also returns the modified array.The first argument to
+                        fill() is value to set array elements to.The optional
+                        second argument specifies the starting index. The
+                        optional third index specifies the ending index.
+                    </p>
+                    <h5>copyWithin()</h5>
+                    <p>
+                        copyWithin() copies a slice of an array to a new
+                        position within the array.It returns the modified
+                        array.The first argument specifies the destination,the
+                        second specifies the start and the third specifies the
+                        end.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h5>6.10.1 Shorthand properties</h5>
+                    <p>
+                        suppose you have a values stored in variables x and y
+                        and want tot create an object with properites x and y
+                        that hold the values.With basic object literal
+                        systax,you end up repeating each identifier twice. In
+                        ES6 and later, you can drop the colon and one copy of
+                        the identifier and end up with much simpler code.
+                    </p>
+                    <h5>6.10.2 Computed property names</h5>
+                    <p>
+                        sometimes you need to create an object with a specific
+                        property,but the name of the property is not a compile
+                        time constant that you can type literally in your source
+                        code.Instead, the property name you need is stored in a
+                        variable or is the return value of a fuction.You cant
+                        use a basic object literal syntax instead you have to
+                        create an object and then add the desired properties as
+                        an extra step.In ES6 or later it is much simpler to set
+                        up an object with computed property feature that lets
+                        you take the square brackets from the preceding code and
+                        move them directly into the object literal. <br />
+                        const PROPERTY_NAME = "p1";<br />
+                        function computePropertyName() {return "p" + 2;}<br />
+                        let p = { <br />
+                        [PROPERTY_NAME]: 1, <br />
+                        [computePropertyName()]: 2 <br />
+                        }; <br />
+                    </p>
+                    <h5>6.10.3 Symbols as property names</h5>
+                    <p>
+                        The computed property syntax enables one other very
+                        important object literal feature.In ES6 and
+                        later,property names can be strings or symbols. If you
+                        assign a symbol to a variable or constant then you can
+                        use that symbol as a property name using the computed
+                        property syntax.
+                    </p>
+                    <h5>6.10.4 Spread Operator</h5>
+                    <p>
+                        In ES2018 and later, you can copy the properties of an
+                        existing object into a new object using the spread
+                        operator inside an object literal.
+                    </p>
+                    <h5>6.10.5 Shorhand methods</h5>
+                    <p>
+                        Prior to ES6 you would define a method in an object
+                        literal using a function definition expression just as
+                        you would define any other property of an object.In ES6
+                        and later the object literal syntax has been extended to
+                        allow a shortcut where the function keyword and the
+                        colon are omitted.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My project</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu-container">
+                <div id="menu">
+                    <ul class="menu-content">
+                        <li>
+                            chapter 1: introduction to javascript
+                            <ul>
+                                <li>chapter 1: introduction to javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content">
+                    <h4>3.6 Symbols</h4>
+                    <p>
+                        Symbols were introduced in ES6 to serve as non string
+                        property names.javascript fundamental object type is an
+                        unordered collection of properties where each property
+                        has name and value.property names were typically strings
+                        but since ES6 symbols can also be used.To obtain a
+                        Symbol vaue we call symbol fuction.This fuction never
+                        returns same value even if we pass same argument.
+                    </p>
+                    <h4>3.7 Global object</h4>
+                    <p>
+                        global object is a regular javascript object that serves
+                        a very important purpose. The properties of this object
+                        are globally defined identifiers that are available to
+                        javascript program.when javascript interpreter starts,
+                        it creats a new global object and gives it an initial
+                        set of properties that define. Global constats
+                        Nan,undefined and infinity. Global functions such as
+                        isNaN(),parseInt(),eval().
+                    </p>
+                    <h4>
+                        3.8 Immutable primitive values and mutable object
+                        references
+                    </h4>
+                    <p>
+                        There is fundamental difference between primitive values
+                        and objects. Primitives are immutable whereas objects
+                        are mutable.primitives are compared by value.Objects are
+                        not compared by value. Two objects are equal even if
+                        they have same properites and values.Two distinct arrays
+                        are equal if they have same elements in same order. TWo
+                        objects are same if and only if they refer to same
+                        underlying object.
+                    </p>
+                    <h4>3.9 Type conversions</h4>
+                    <p>
+                        Javascript is very flexible about type conversions.If
+                        javascript wants a string it will convert whatever the
+                        value you give it to a string.If javascript wants a
+                        number it will convert whatever the value you give it to
+                        a number or to NaN if it cannot perform a meaningful
+                        conversion.
+                    </p>
+                    <h4>3.10 Variable declaration and assignment</h4>
+                    <p>
+                        one of the fundamental techniques of computer
+                        programming is the use of indentifiers to represent
+                        values. Binding a value to a name gives us a way to
+                        refer to the value and use it int the programs.The term
+                        variable implies the value it contains can vary as the
+                        program runs.In ES6 onwards variables are declared using
+                        let and constant.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
